@@ -100,7 +100,6 @@ void includeProject(String artifactId, File artifactDir) {
         String path = ":$artifactId"
         include(path)
         project(path).projectDir = artifactDir
-        println("$path -> $artifactDir")
     }
 }
 

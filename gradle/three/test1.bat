@@ -1,0 +1,1 @@
+@echo off && gradlew test1:jar && java -jar out/test1.jar
