@@ -101,8 +101,6 @@ void includeProject(String artifactId, File artifactDir) {
         include(path)
         project(path).projectDir = artifactDir
         println("$path -> $artifactDir")
-    } else {
-        // no op
     }
 }
 

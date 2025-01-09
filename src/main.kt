@@ -1,5 +1,5 @@
 package three
 
 fun main() {
-    println("main!!!")
+    println("three")
 }
