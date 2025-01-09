@@ -1,0 +1,29 @@
+buildscript {
+    repositories {
+        mavenLocal()
+        gradlePluginPortal()
+        mavenCentral()
+        google()
+    }
+    dependencies {
+        classpath "com.featurea:platform:0.0.12"
+    }
+}
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+ext.FEATUREA_DEV = System.getenv("FEATUREA_DEV")
+ext.FEATUREA_HOME = System.getenv("FEATUREA_HOME")
+
+allprojects {
+    apply plugin: "featurea"
+}
+
+artifact "three"
+
+release {
+    desktop()
+}
